@@ -40,7 +40,7 @@
             android:label="@string/title_activity_usuario_list" >
         </activity>
         <activity
-            android:name="com.telnor.curso.tadk.ccamara.CamaraActivity"
+            android:name="com.telnor.curso.tadk.camara.CameraActivity"
             android:label="@string/title_activity_usuario_list" >
         </activity>
     </application>
