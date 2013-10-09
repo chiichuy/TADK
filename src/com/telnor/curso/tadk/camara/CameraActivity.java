@@ -71,32 +71,11 @@ public class CameraActivity extends Activity {
 		}
 	}
 
-	private boolean isDeviceSupportCamera() {
-		if (getApplicationContext().getPackageManager().hasSystemFeature(
-				PackageManager.FEATURE_CAMERA)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
 	private void captureImage() {
 		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 		fileUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE);
 		intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
 		startActivityForResult(intent, CAMERA_CAPTURE_IMAGE_REQUEST_CODE);
-	}
-
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-		outState.putParcelable("file_uri", fileUri);
-	}
-
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		super.onRestoreInstanceState(savedInstanceState);
-		fileUri = savedInstanceState.getParcelable("file_uri");
 	}
 
 	private void recordVideo() {
@@ -136,13 +115,33 @@ public class CameraActivity extends Activity {
 		}
 	}
 
+	private boolean isDeviceSupportCamera() {
+		if (getApplicationContext().getPackageManager().hasSystemFeature(
+				PackageManager.FEATURE_CAMERA)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putParcelable("file_uri", fileUri);
+	}
+
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		super.onRestoreInstanceState(savedInstanceState);
+		fileUri = savedInstanceState.getParcelable("file_uri");
+	}
+
 	private void previewCapturedImage() {
 		try {
 			videoPreview.setVisibility(View.GONE);
 			imgPreview.setVisibility(View.VISIBLE);
 			BitmapFactory.Options options = new BitmapFactory.Options();
 			options.inSampleSize = 8;
-
 			final Bitmap bitmap = BitmapFactory.decodeFile(fileUri.getPath(),
 					options);
 			imgPreview.setImageBitmap(bitmap);
@@ -153,7 +152,6 @@ public class CameraActivity extends Activity {
 
 	private void previewVideo() {
 		try {
-
 			imgPreview.setVisibility(View.GONE);
 			videoPreview.setVisibility(View.VISIBLE);
 			videoPreview.setVideoPath(fileUri.getPath());
