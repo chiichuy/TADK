@@ -4,7 +4,6 @@ import com.androidquery.AQuery;
 
 import com.telnor.curso.tadk.R;
 import com.telnor.curso.tadk.listview.RowAdapter;
-import com.telnor.curso.tadk.contentProvider.UsuarioContentProvider;
 import com.telnor.curso.tadk.contentProvider.UsuarioContentProvider.*;
 
 import android.net.Uri;
@@ -18,6 +17,11 @@ public class UsuarioListActivity extends Activity {
 	AQuery aq;
 	RowAdapter listado;
 	
+	private static final String uri = 
+			"content://com.telnor.curso.tadk.contentprovider.usuariocontentprovider/usuario";
+	
+	public static final Uri CONTENT_URI = Uri.parse(uri);
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,6 +32,7 @@ public class UsuarioListActivity extends Activity {
 		
 		aq.id(R.id.usuarioListActivity_list).adapter(listado);
 		
+		consultar();
 	}
 
 	@Override
@@ -41,12 +46,12 @@ public class UsuarioListActivity extends Activity {
 		listado.clear();
 		//Columnas de la tabla a recuperar
         String[] projection = new String[] {
-        		Usuario._ID,
+        		"_ID",
         		Usuario.COL_NOMBRE,
         		Usuario.COL_TELEFONO,
         		Usuario.COL_EMAIL };
 
-        Uri clientesUri =  UsuarioContentProvider.CONTENT_URI;
+        Uri clientesUri =  CONTENT_URI;
 
         ContentResolver cr = getContentResolver();
         

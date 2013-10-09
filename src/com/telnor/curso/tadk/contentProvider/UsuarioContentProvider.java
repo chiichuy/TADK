@@ -14,7 +14,7 @@ public class UsuarioContentProvider extends ContentProvider {
 
 	//Definición del CONTENT_URI
 	private static final String uri =
-	    "content://com.telnor.curso.tadk.contentprovider/usuario";
+	    "content://com.telnor.curso.tadk.contentprovider.usuariocontentprovider/usuario";
 	 
 	public static final Uri CONTENT_URI = Uri.parse(uri);
 	
