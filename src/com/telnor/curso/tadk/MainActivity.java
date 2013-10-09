@@ -16,7 +16,6 @@ import android.view.Menu;
 public class MainActivity extends Activity {
 
 	Button btnCamera;
-
 	AQuery aq;
 
 	@Override
@@ -24,7 +23,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		btnCamera = (Button) findViewById(R.id.btnRecordVideo);
+		btnCamera = (Button) findViewById(R.id.btn_camera);
 		btnCamera.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
