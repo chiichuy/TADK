@@ -4,4 +4,4 @@ Link de descarga de la presentación.
 
 https://db.tt/tMbcGGf7
 
-Lista de clases y paquetes base de Actividades de Android.
+Proyecto en Android que contiene clases base de los temas impartidos en el curso.
