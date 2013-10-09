@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
 				startActivity(cameraIntent);
 			}
 		});
+		
 		aq = new AQuery(this);
 
 		aq.id(R.id.btn_mainActivity_contentProvider).clicked(this,
