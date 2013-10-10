@@ -65,7 +65,7 @@
         </activity>
 
         <service
-            android:name=".MyService"
+            android:name="com.telnor.curso.tadk.services.MyService"
             android:enabled="true" />
     </application>
 
