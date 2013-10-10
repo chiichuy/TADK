@@ -13,7 +13,7 @@ import android.content.ContentResolver;
 import android.database.Cursor;
 import android.view.Menu;
 
-public class UsuarioListActivity extends Activity {
+public class UsuarioListProviderActivity extends Activity {
 	AQuery aq;
 	RowAdapter listado;
 	
@@ -25,7 +25,7 @@ public class UsuarioListActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_usuario_list);
+		setContentView(R.layout.activity_usuario_list_provider);
 		
 		aq = new AQuery(this);
 		listado = new RowAdapter(this);

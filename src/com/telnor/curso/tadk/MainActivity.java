@@ -2,7 +2,7 @@ package com.telnor.curso.tadk;
 
 import com.androidquery.AQuery;
 import com.telnor.curso.tadk.contentProvider.UsuarioContentProvider;
-import com.telnor.curso.tadk.contentProviderReader.UsuarioListActivity;
+import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void abrirContentProvider() {
-		Intent intent = new Intent(getApplicationContext(), UsuarioListActivity.class);
+		Intent intent = new Intent(getApplicationContext(), UsuarioListProviderActivity.class);
 		startActivity(intent);
 
 	}

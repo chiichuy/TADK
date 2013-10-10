@@ -36,7 +36,7 @@
         </provider>
 
         <activity
-            android:name="com.telnor.curso.tadk.contentProviderReader.UsuarioListActivity"
+            android:name="com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity"
             android:label="@string/title_activity_usuario_list" >
         </activity>
         <activity
