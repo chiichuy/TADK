@@ -43,6 +43,18 @@
             android:name="com.telnor.curso.tadk.camara.CameraActivity"
             android:label="@string/title_activity_usuario_list" >
         </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.fragment.UsuarioListActivity"
+            android:label="@string/title_usuario_list" >
+        </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.fragment.UsuarioDetailActivity"
+            android:label="@string/title_usuario_detail"
+            android:parentActivityName="com.telnor.curso.tadk.fragment.UsuarioListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsuarioListActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.telnor.curso.tadk.camara.CameraActivity;
+import com.telnor.curso.tadk.fragment.UsuarioListActivity;
+
 import android.view.Menu;
 
 public class MainActivity extends Activity {
@@ -38,12 +40,19 @@ public class MainActivity extends Activity {
 
 		aq.id(R.id.btn_mainActivity_contentProvider).clicked(this,
 				"abrirContentProvider");
+		aq.id(R.id.btn_mainActivity_fragmentos).clicked(this,
+				"abrirFragmentos");
 	}
 
 	public void abrirContentProvider() {
 		Intent intent = new Intent(getApplicationContext(), UsuarioListProviderActivity.class);
 		startActivity(intent);
 
+	}
+	
+	public void abrirFragmentos(){
+		Intent intent = new Intent(getApplicationContext(), UsuarioListActivity.class);
+		startActivity(intent);
 	}
 
 }

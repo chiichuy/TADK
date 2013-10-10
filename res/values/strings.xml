@@ -8,5 +8,8 @@
     <string name="usuarioListActivity_titulo">Resultado</string>
     <string name="cameraApp">Cámara</string>
     <string name="btn_text_detalles">Ver detallado</string>
+    <string name="btn_text_fragmentos">Fragmentos</string>
+    <string name="title_usuario_list">Usuarios</string>
+    <string name="title_usuario_detail">Usuario Detail</string>
 
 </resources>
