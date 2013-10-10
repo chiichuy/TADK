@@ -59,6 +59,14 @@
             android:name="com.telnor.curso.tadk.notification.NotificationActivity"
             android:label="@string/title_activity_notification" >
         </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.services.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
     </application>
 
 </manifest>

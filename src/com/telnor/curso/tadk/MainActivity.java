@@ -10,6 +10,7 @@ import com.telnor.curso.tadk.camara.CameraActivity;
 import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
 import com.telnor.curso.tadk.fragment.UsuarioListActivity;
 import com.telnor.curso.tadk.notification.NotificationActivity;
+import com.telnor.curso.tadk.services.ServiceActivity;
 
 public class MainActivity extends Activity {
 
@@ -28,6 +29,7 @@ public class MainActivity extends Activity {
 		aq.id(R.id.btn_mainActivity_fragments).clicked(this, "abrirFragmentos");
 		aq.id(R.id.btn_mainActivity_notifications).clicked(this,
 				"abrirNotificaciones");
+		aq.id(R.id.btn_mainActivity_services).clicked(this, "abrirServicios");
 	}
 
 	public void abrirContentProvider() {
@@ -53,6 +55,12 @@ public class MainActivity extends Activity {
 		Intent notificationIntent = new Intent(getApplicationContext(),
 				NotificationActivity.class);
 		startActivity(notificationIntent);
+	}
+
+	public void abrirServicios() {
+		Intent serviceIntent = new Intent(getApplicationContext(),
+				ServiceActivity.class);
+		startActivity(serviceIntent);
 	}
 
 }

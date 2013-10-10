@@ -17,5 +17,9 @@
     <string name="cancel">Cancel Notification</string>
     <string name="first_notify">New Notification!</string>
     <string name="btn_text_notificaciones">Notificaciones</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="btn_startService">Start service</string>
+    <string name="btn_stopService">Stop service</string>
+    <string name="btn_text_startService">Servicios</string>
 
 </resources>
