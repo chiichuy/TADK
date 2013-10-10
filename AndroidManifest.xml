@@ -55,6 +55,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".UsuarioListActivity" />
         </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.notification.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+        </activity>
     </application>
 
 </manifest>

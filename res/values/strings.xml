@@ -11,5 +11,11 @@
     <string name="btn_text_fragmentos">Fragmentos</string>
     <string name="title_usuario_list">Usuarios</string>
     <string name="title_usuario_detail">Usuario Detail</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="hello">Hello World, Notification A!</string>
+    <string name="notify">Send Notification</string>
+    <string name="cancel">Cancel Notification</string>
+    <string name="first_notify">New Notification!</string>
+    <string name="btn_text_notificaciones">Notificaciones</string>
 
 </resources>
