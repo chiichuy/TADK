@@ -63,6 +63,7 @@ public class UsuarioListActivity extends FragmentActivity implements
 			arguments.putString(UsuarioDetailFragment.ARG_ITEM_ID, id);
 			UsuarioDetailFragment fragment = new UsuarioDetailFragment();
 			fragment.setArguments(arguments);
+			
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.usuario_detail_container, fragment).commit();
 

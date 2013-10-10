@@ -1,16 +1,20 @@
 package com.telnor.curso.tadk;
 
+import com.androidquery.AQuery;
+import com.telnor.curso.tadk.contentProvider.UsuarioContentProvider;
+import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
+
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
-import com.androidquery.AQuery;
 import com.telnor.curso.tadk.camara.CameraActivity;
-import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
 import com.telnor.curso.tadk.fragment.UsuarioListActivity;
-import com.telnor.curso.tadk.notification.NotificationActivity;
-import com.telnor.curso.tadk.services.ServiceActivity;
+
+import android.view.Menu;
 
 public class MainActivity extends Activity {
 
@@ -22,45 +26,33 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		btnCamera = (Button) findViewById(R.id.btn_camera);
+		btnCamera.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent cameraIntent = new Intent(getApplicationContext(),
+						CameraActivity.class);
+				startActivity(cameraIntent);
+			}
+		});
+		
 		aq = new AQuery(this);
-		aq.id(R.id.btn_mainActivity_camera).clicked(this, "abrirCamara");
+
 		aq.id(R.id.btn_mainActivity_contentProvider).clicked(this,
 				"abrirContentProvider");
-		aq.id(R.id.btn_mainActivity_fragments).clicked(this, "abrirFragmentos");
-		aq.id(R.id.btn_mainActivity_notifications).clicked(this,
-				"abrirNotificaciones");
-		aq.id(R.id.btn_mainActivity_services).clicked(this, "abrirServicios");
+		aq.id(R.id.btn_mainActivity_fragmentos).clicked(this,
+				"abrirFragmentos");
 	}
 
 	public void abrirContentProvider() {
-		Intent intent = new Intent(getApplicationContext(),
-				UsuarioListProviderActivity.class);
+		Intent intent = new Intent(getApplicationContext(), UsuarioListProviderActivity.class);
 		startActivity(intent);
 
 	}
-
-	public void abrirFragmentos() {
-		Intent intent = new Intent(getApplicationContext(),
-				UsuarioListActivity.class);
+	
+	public void abrirFragmentos(){
+		Intent intent = new Intent(getApplicationContext(), UsuarioListActivity.class);
 		startActivity(intent);
-	}
-
-	public void abrirCamara() {
-		Intent cameraIntent = new Intent(getApplicationContext(),
-				CameraActivity.class);
-		startActivity(cameraIntent);
-	}
-
-	public void abrirNotificaciones() {
-		Intent notificationIntent = new Intent(getApplicationContext(),
-				NotificationActivity.class);
-		startActivity(notificationIntent);
-	}
-
-	public void abrirServicios() {
-		Intent serviceIntent = new Intent(getApplicationContext(),
-				ServiceActivity.class);
-		startActivity(serviceIntent);
 	}
 
 }

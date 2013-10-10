@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">TADK</string>
-    <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_usuario_list">UsuarioListActivity</string>
     <string name="usuarioListActivity_titulo">Resultado</string>
@@ -11,15 +10,16 @@
     <string name="btn_text_fragmentos">Fragmentos</string>
     <string name="title_usuario_list">Usuarios</string>
     <string name="title_usuario_detail">Usuario Detail</string>
-    <string name="title_activity_notification">NotificationActivity</string>
-    <string name="hello">Hello World, Notification A!</string>
-    <string name="notify">Send Notification</string>
-    <string name="cancel">Cancel Notification</string>
-    <string name="first_notify">New Notification!</string>
-    <string name="btn_text_notificaciones">Notificaciones</string>
-    <string name="title_activity_service">ServiceActivity</string>
-    <string name="btn_startService">Start service</string>
-    <string name="btn_stopService">Stop service</string>
-    <string name="btn_text_startService">Servicios</string>
+    <string name="battery">Bateria</string>
+
+    <!-- Action Bar -->
+    <string name="action_settings">Configuracion</string>
+    <string name="action_enviar">Enviar</string>
+    <string name="action_nuevo">Nuevo</string>
+    <string name="action_eliminar">Eliminar</string>
+    <string name="action_archivar">Archivar</string>
+    <string name="action_refrescar">Refrescar</string>
+    <string name="action_share">Compartir</string>
+    <string name="title_activity_system">SystemActivity</string>
 
 </resources>

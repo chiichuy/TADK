@@ -3,7 +3,38 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        android:icon="@drawable/ic_action_settings"
+        android:showAsAction="never|ifRoom|withText"
         android:title="@string/action_settings"/>
+    
+    <item
+        android:id="@+id/action_archivar"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_action_attachment"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_archivar"/>
+    <item
+        android:id="@+id/action_eliminar"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_action_remove"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_eliminar"/>
+    <item
+        android:id="@+id/action_enviar"
+        android:icon="@drawable/ic_action_email"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_enviar"/>
+    <item
+        android:id="@+id/action_refrescar"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_refrescar"/>
+    <item
+        android:id="@+id/action_nuevo"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_nuevo"/>
 
 </menu>
