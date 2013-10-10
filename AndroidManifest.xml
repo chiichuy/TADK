@@ -37,8 +37,7 @@
 
         <activity
             android:name="com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity"
-            android:label="@string/title_activity_usuario_list"
-            android:uiOptions="splitActionBarWhenNarrow" >
+            android:label="@string/title_activity_usuario_list" >
         </activity>
         <activity
             android:name="com.telnor.curso.tadk.camara.CameraActivity"
@@ -57,9 +56,17 @@
                 android:value=".UsuarioListActivity" />
         </activity>
         <activity
-            android:name="com.telnor.curso.tadk.system.SystemActivity"
-            android:label="@string/title_activity_system" >
+            android:name="com.telnor.curso.tadk.notification.NotificationActivity"
+            android:label="@string/title_activity_notification" >
         </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.services.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+
+        <service
+            android:name="com.telnor.curso.tadk.services.MyService"
+            android:enabled="true" />
     </application>
 
 </manifest>

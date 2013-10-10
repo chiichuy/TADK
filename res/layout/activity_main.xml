@@ -18,15 +18,27 @@
         android:text="@string/btn_text_detalles" />
 
     <Button
-        android:id="@+id/btn_camera"
+        android:id="@+id/btn_mainActivity_camera"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Cámara" />
-    
-     <Button
-        android:id="@+id/btn_mainActivity_fragmentos"
+        android:text="@string/cameraApp" />
+
+    <Button
+        android:id="@+id/btn_mainActivity_fragments"
         android:layout_width="fill_parent"
         android:layout_height="48dp"
         android:text="@string/btn_text_fragmentos" />
+
+    <Button
+        android:id="@+id/btn_mainActivity_notifications"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_notificaciones" />
+
+    <Button
+        android:id="@+id/btn_mainActivity_services"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_startService" />
 
 </LinearLayout>
