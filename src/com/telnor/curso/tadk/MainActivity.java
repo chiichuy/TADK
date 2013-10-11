@@ -37,6 +37,7 @@ public class MainActivity extends Activity {
 		aq.id(R.id.btn_mainActivity_sensors).clicked(this, "abrirSensores");
 		aq.id(R.id.btn_mainActivity_gps).clicked(this, "abrirGPS");
 		aq.id(R.id.btn_mainActivity_hardware).clicked(this, "abrirHardware");
+		aq.id(R.id.btn_mainActivity_bateria).clicked(this, "abrirStatusBateria");
 	}
 
 	public void abrirContentProvider() {
