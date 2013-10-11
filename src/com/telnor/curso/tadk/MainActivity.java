@@ -9,7 +9,9 @@ import com.androidquery.AQuery;
 import com.telnor.curso.tadk.camara.CameraActivity;
 import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
 import com.telnor.curso.tadk.fragment.UsuarioListActivity;
+import com.telnor.curso.tadk.gps.GPSActivity;
 import com.telnor.curso.tadk.notification.NotificationActivity;
+import com.telnor.curso.tadk.sensors.SensorActivity;
 import com.telnor.curso.tadk.services.ServiceActivity;
 
 public class MainActivity extends Activity {
@@ -30,6 +32,8 @@ public class MainActivity extends Activity {
 		aq.id(R.id.btn_mainActivity_notifications).clicked(this,
 				"abrirNotificaciones");
 		aq.id(R.id.btn_mainActivity_services).clicked(this, "abrirServicios");
+		aq.id(R.id.btn_mainActivity_sensors).clicked(this, "abrirSensores");
+		aq.id(R.id.btn_mainActivity_gps).clicked(this, "abrirGPS");
 	}
 
 	public void abrirContentProvider() {
@@ -61,6 +65,18 @@ public class MainActivity extends Activity {
 		Intent serviceIntent = new Intent(getApplicationContext(),
 				ServiceActivity.class);
 		startActivity(serviceIntent);
+	}
+
+	public void abrirSensores() {
+		Intent sensorIntent = new Intent(getApplicationContext(),
+				SensorActivity.class);
+		startActivity(sensorIntent);
+	}
+
+	public void abrirGPS() {
+		Intent gpsIntent = new Intent(getApplicationContext(),
+				GPSActivity.class);
+		startActivity(gpsIntent);
 	}
 
 }
