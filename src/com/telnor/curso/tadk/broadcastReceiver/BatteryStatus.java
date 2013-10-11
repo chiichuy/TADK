@@ -18,6 +18,22 @@ public class BatteryStatus extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_battery_status);
+		BroadcastReceiver batteryReceiver1 = new BroadcastReceiver() {
+
+			@Override
+			public void onReceive(Context context, Intent intent) {
+			
+				String level = "";
+				String mensaje = "";
+
+				level = intent.getStringExtra(BatteryManager.EXTRA_PLUGGED);
+				
+				mensaje = "Conectado "+level;
+				Log.e("BatteryManager_", mensaje);
+				Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show();
+			}
+
+		};
 		BroadcastReceiver batteryReceiver = new BroadcastReceiver() {
 			int scale = -1;
 			int level = -1;
@@ -39,6 +55,8 @@ public class BatteryStatus extends Activity {
 			}
 		};
 		IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+		IntentFilter filter1 = new IntentFilter(Intent.ACTION_POWER_CONNECTED);
 		registerReceiver(batteryReceiver, filter);
+		registerReceiver(batteryReceiver1, filter1);
 	}
 }

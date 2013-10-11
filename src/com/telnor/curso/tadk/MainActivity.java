@@ -12,6 +12,7 @@ import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
 import com.telnor.curso.tadk.fragment.UsuarioListActivity;
 import com.telnor.curso.tadk.gps.GPSActivity;
 import com.telnor.curso.tadk.hardware.HardwareActivity;
+import com.telnor.curso.tadk.json.JsonActivity;
 import com.telnor.curso.tadk.notification.NotificationActivity;
 import com.telnor.curso.tadk.sensors.SensorActivity;
 import com.telnor.curso.tadk.services.ServiceActivity;
@@ -38,6 +39,12 @@ public class MainActivity extends Activity {
 		aq.id(R.id.btn_mainActivity_gps).clicked(this, "abrirGPS");
 		aq.id(R.id.btn_mainActivity_hardware).clicked(this, "abrirHardware");
 		aq.id(R.id.btn_mainActivity_bateria).clicked(this, "abrirStatusBateria");
+		aq.id(R.id.btn_mainActivity_json).clicked(this,"abrirJson");
+	}
+	
+	public void abrirJson(){
+		Intent intent = new Intent(this,JsonActivity.class);
+		startActivity(intent);
 	}
 
 	public void abrirContentProvider() {

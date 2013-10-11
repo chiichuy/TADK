@@ -142,6 +142,10 @@
             android:name="com.telnor.curso.tadk.broadcastReceiver.BatteryStatus"
             android:label="@string/title_activity_battery_status" >
         </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.json.JsonActivity"
+            android:label="@string/title_activity_json" >
+        </activity>
     </application>
 
 </manifest>

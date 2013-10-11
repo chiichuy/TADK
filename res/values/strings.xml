@@ -25,6 +25,7 @@
     <string name="btn_text_gps">GPS</string>
     <string name="btn_text_hardware">Hardware</string>
     <string name="btn_text_battery">Batería</string>
+     <string name="btn_text_json">Json</string>
     <!-- Action bar -->
     <string name="action_nuevo">Nuevo</string>
     <string name="action_refrescar">Refrescar</string>
@@ -34,5 +35,6 @@
     <string name="action_settings">Configuracion</string>
     <string name="title_activity_hardware">HardwareActivity</string>
     <string name="title_activity_battery_status">BatteryStatus</string>
+    <string name="title_activity_json">JsonActivity</string>
 
 </resources>

@@ -64,5 +64,11 @@
         android:layout_width="fill_parent"
         android:layout_height="48dp"
         android:text="@string/btn_text_battery" />
+    
+    <Button
+        android:id="@+id/btn_mainActivity_json"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_json" />
 
 </LinearLayout>
