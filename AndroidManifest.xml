@@ -37,7 +37,8 @@
 
         <activity
             android:name="com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity"
-            android:label="@string/title_activity_usuario_list" >
+            android:label="@string/title_activity_usuario_list"
+            android:uiOptions="splitActionBarWhenNarrow" >
         </activity>
         <activity
             android:name="com.telnor.curso.tadk.camara.CameraActivity"
