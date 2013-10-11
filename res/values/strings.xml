@@ -2,26 +2,28 @@
 <resources>
 
     <string name="app_name">TADK</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_usuario_list">UsuarioListActivity</string>
+    <string name="title_usuario_list">Usuarios</string>
+    <string name="title_usuario_detail">Usuario Detalle</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_gps">GPS</string>
+    <string name="title_activity_service">ServiceActivity</string>
     <string name="usuarioListActivity_titulo">Resultado</string>
     <string name="cameraApp">Cámara</string>
-    <string name="btn_text_detalles">Ver detallado</string>
-    <string name="btn_text_fragmentos">Fragmentos</string>
-    <string name="title_usuario_list">Usuarios</string>
-    <string name="title_usuario_detail">Usuario Detail</string>
-    <string name="title_activity_notification">NotificationActivity</string>
     <string name="hello">Hello World, Notification A!</string>
     <string name="notify">Send Notification</string>
     <string name="cancel">Cancel Notification</string>
+    <string name="hello_world">Hello world!</string>
     <string name="first_notify">New Notification!</string>
+    <string name="btn_text_detalles">Ver detallado</string>
+    <string name="btn_text_fragmentos">Fragmentos</string>
     <string name="btn_text_notificaciones">Notificaciones</string>
-    <string name="title_activity_service">ServiceActivity</string>
     <string name="btn_startService">Start service</string>
     <string name="btn_stopService">Stop service</string>
     <string name="btn_text_startService">Servicios</string>
-    
-    <!--  Action bar -->
+    <string name="btn_text_sensors">Sensores</string>
+    <string name="btn_text_gps">GPS</string>
+    <!-- Action bar -->
     <string name="action_nuevo">Nuevo</string>
     <string name="action_refrescar">Refrescar</string>
     <string name="action_enviar">Enviar</string>

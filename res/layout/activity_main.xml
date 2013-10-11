@@ -41,4 +41,16 @@
         android:layout_height="48dp"
         android:text="@string/btn_text_startService" />
 
+    <Button
+        android:id="@+id/btn_mainActivity_sensors"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_sensors" />
+
+    <Button
+        android:id="@+id/btn_mainActivity_gps"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_gps" />
+
 </LinearLayout>
