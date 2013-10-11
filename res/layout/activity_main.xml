@@ -53,4 +53,16 @@
         android:layout_height="48dp"
         android:text="@string/btn_text_gps" />
 
+    <Button
+        android:id="@+id/btn_mainActivity_hardware"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_hardware" />
+
+    <Button
+        android:id="@+id/btn_mainActivity_bateria"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/btn_text_battery" />
+
 </LinearLayout>

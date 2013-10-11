@@ -80,6 +80,10 @@
             android:name="com.telnor.curso.tadk.gps.GPSActivity"
             android:label="@string/title_activity_gps" >
         </activity>
+        <activity
+            android:name="com.telnor.curso.tadk.hardware.HardwareActivity"
+            android:label="@string/title_activity_hardware" >
+        </activity>
         <activity android:name="com.telnor.curso.tadk.sensors.GestureView" />
         <activity android:name="com.telnor.curso.tadk.sensors.GestureAdd" />
         <activity android:name="com.telnor.curso.tadk.sensors.SensorAccel" />
@@ -133,6 +137,11 @@
         <service
             android:name="com.telnor.curso.tadk.services.MyService"
             android:enabled="true" />
+
+        <activity
+            android:name="com.telnor.curso.tadk.broadcastReceiver.BatteryStatus"
+            android:label="@string/title_activity_battery_status" >
+        </activity>
     </application>
 
 </manifest>

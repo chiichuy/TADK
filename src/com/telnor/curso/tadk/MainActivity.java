@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.androidquery.AQuery;
+import com.telnor.curso.tadk.broadcastReceiver.BatteryStatus;
 import com.telnor.curso.tadk.camara.CameraActivity;
 import com.telnor.curso.tadk.contentProviderReader.UsuarioListProviderActivity;
 import com.telnor.curso.tadk.fragment.UsuarioListActivity;
 import com.telnor.curso.tadk.gps.GPSActivity;
+import com.telnor.curso.tadk.hardware.HardwareActivity;
 import com.telnor.curso.tadk.notification.NotificationActivity;
 import com.telnor.curso.tadk.sensors.SensorActivity;
 import com.telnor.curso.tadk.services.ServiceActivity;
@@ -34,6 +36,7 @@ public class MainActivity extends Activity {
 		aq.id(R.id.btn_mainActivity_services).clicked(this, "abrirServicios");
 		aq.id(R.id.btn_mainActivity_sensors).clicked(this, "abrirSensores");
 		aq.id(R.id.btn_mainActivity_gps).clicked(this, "abrirGPS");
+		aq.id(R.id.btn_mainActivity_hardware).clicked(this, "abrirHardware");
 	}
 
 	public void abrirContentProvider() {
@@ -79,4 +82,15 @@ public class MainActivity extends Activity {
 		startActivity(gpsIntent);
 	}
 
+	public void abrirHardware() {
+		Intent hardwareIntent = new Intent(getApplicationContext(),
+				HardwareActivity.class);
+		startActivity(hardwareIntent);
+	}
+
+	public void abrirStatusBateria() {
+		Intent batteryIntent = new Intent(getApplicationContext(),
+				BatteryStatus.class);
+		startActivity(batteryIntent);
+	}
 }

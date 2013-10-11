@@ -9,7 +9,7 @@
     <string name="title_activity_gps">GPS</string>
     <string name="title_activity_service">ServiceActivity</string>
     <string name="usuarioListActivity_titulo">Resultado</string>
-    <string name="cameraApp">Cámara</string>
+    <string name="cameraApp">TADK</string>
     <string name="hello">Hello World, Notification A!</string>
     <string name="notify">Send Notification</string>
     <string name="cancel">Cancel Notification</string>
@@ -23,6 +23,8 @@
     <string name="btn_text_startService">Servicios</string>
     <string name="btn_text_sensors">Sensores</string>
     <string name="btn_text_gps">GPS</string>
+    <string name="btn_text_hardware">Hardware</string>
+    <string name="btn_text_battery">Batería</string>
     <!-- Action bar -->
     <string name="action_nuevo">Nuevo</string>
     <string name="action_refrescar">Refrescar</string>
@@ -30,5 +32,7 @@
     <string name="action_eliminar">Eliminar</string>
     <string name="action_archivar">Archivar</string>
     <string name="action_settings">Configuracion</string>
+    <string name="title_activity_hardware">HardwareActivity</string>
+    <string name="title_activity_battery_status">BatteryStatus</string>
 
 </resources>
