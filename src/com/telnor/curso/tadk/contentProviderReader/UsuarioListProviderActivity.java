@@ -2,6 +2,7 @@ package com.telnor.curso.tadk.contentProviderReader;
 
 import com.androidquery.AQuery;
 
+import com.telnor.curso.tadk.MainActivity;
 import com.telnor.curso.tadk.R;
 import com.telnor.curso.tadk.listview.RowAdapter;
 import com.telnor.curso.tadk.contentProvider.UsuarioContentProvider.*;
@@ -10,8 +11,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.database.Cursor;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 public class UsuarioListProviderActivity extends Activity {
 	AQuery aq;
@@ -39,7 +44,47 @@ public class UsuarioListProviderActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.usuario_list, menu);
-		return true;
+		return super.onCreateOptionsMenu(menu);
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home: {
+			NavUtils.navigateUpTo(this, new Intent(this,
+					MainActivity.class));
+			return true;
+		}
+		case R.id.action_archivar:{
+			mensaje("Archivar");
+			return true;
+		}
+		case R.id.action_eliminar:{
+			mensaje("Eliminando");
+			return true;
+		}
+		case R.id.action_enviar:{
+			mensaje("Enviando!");
+			return true;
+		}
+		case R.id.action_nuevo:{
+			mensaje("Nuevo");
+			return true;
+		}
+		case R.id.action_refrescar:{
+			mensaje("Refrescando");
+			return true;
+		}
+		case R.id.action_settings:{
+			mensaje("Configuracion");
+			return true;
+		}
+			
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	public void mensaje(String mensaje){
+		Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
 	}
 	
 	public void consultar(){
