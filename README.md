@@ -10,6 +10,9 @@ Link de descarga de la presentación del tema de conceptos en Android.
 
 https://db.tt/tMbcGGf7
 
+Link a repositorio con la práctica final de cada participante en el curso.
+
+https://github.com/angelofdeathv1/FinalCursoAndroid
 
 ---------------------------------------------
 Crear Actividad - login (1)
@@ -68,8 +71,6 @@ error={"status":"error","descripcion":"No se pudo hacer login :( usuario contras
 
 lista de usuarios - http://localhost/ANDROIDSERVICE_WEB/UK/PAGE_PracticaFinal.awp?accion=usuarios
 exito={"status":"ok","list":[{"UsuariosID":2,"Nombre":"Angel","Paterno":"Arambula","Materno":"Garcia","FechaIngreso":"20121011","Foto":"","Latitud":"32.5250","Longitud":"-117.0166700"},{"UsuariosID":5,"Nombre":"Jesus","Paterno":"Amador","Materno":"Figueroa","FechaIngreso":"20131011","Foto":"","Latitud":"-117","Longitud":"32"}}
-
-
 
 agregar usuario -  http://192.168.1.81/ANDROIDSERVICE_WEB/UK/PAGE_PracticaFinal.awp?accion=agregar&nombre=Nombro&paterno=Paterno&materno=Materno&fecha&longitud=Longitud&latitud=Latitud
 exito={"status":"ok","descripcion":"Usuario registrado :(","id":"id"}
